@@ -10,9 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "core-js": "^3.27.1",
-    "react": "16.5",
-    "react-dom": "16.5"
+    "core-js": "^3.27.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.20.7",
