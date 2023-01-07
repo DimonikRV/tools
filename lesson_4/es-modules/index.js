@@ -6,9 +6,9 @@
 // импортируйте ф-цию printProfile из profile/index.js под таким же именем
 import "./polyfills/array-flat.js";
 import "./polyfills/array-flatMap.js";
-import { sum, mult, calc as calcExpression } from "/calculator/index.js";
-import { fetchUser } from "/profile/gateway.js";
-import { printProfile } from "/profile/index.js";
+import { sum, mult, calc as calcExpression } from "./calculator/index";
+import { fetchUser } from "./profile/gateway";
+import { printProfile } from "./profile/index";
 
 const calcResult = calcExpression("1 + 2");
 const sumResult = sum(1, 2);
