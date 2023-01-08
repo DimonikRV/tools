@@ -4,15 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:scripts": "webpack ./src/index.js -p",
-    "watch:scripts": "webpack -d  ./src/index.js --devtools eval-sourse-map -w"
+    "build:scripts": "webpack ./src/my-index.js -p",
+    "watch:scripts": "webpack ./src/my-index.js -d --devtool eval-source-maps -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
   }
 }
