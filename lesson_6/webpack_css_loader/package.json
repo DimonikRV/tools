@@ -11,11 +11,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "core-js": "3.15",
-    "css-loader": "^6.7.3",
+    "css-loader": "^3.3.2",
     "sass": "^1.57.1",
-    "scss-loader": "^0.0.1",
-    "style-loader": "^3.3.1",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.1",
     "webpack": "^4.41.3",
     "webpack-cli": "^3.3.10"
   }
