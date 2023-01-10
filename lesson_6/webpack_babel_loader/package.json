@@ -1,11 +1,11 @@
 {
-  "name": "webpack_css_loader",
+  "name": "babel_polyfills",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack -p",
-    "watch": "webpack -d --devtools eval-source-maps -w"
+    "watch": "webpack -d --devtool eval-source-maps -w"
   },
   "keywords": [],
   "author": "",
@@ -16,9 +16,9 @@
     "@babel/preset-env": "^7.7.6",
     "babel-loader": "^8.0.6",
     "webpack": "^4.41.3",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "3.3.10"
   },
   "dependencies": {
-    "core-js": "^3.27.1"
+    "core-js": "^3.5.0"
   }
 }
