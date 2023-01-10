@@ -2,7 +2,6 @@
   "name": "babel_polyfills",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build": "webpack -p",
     "watch": "webpack -d --devtool eval-source-maps -w"
