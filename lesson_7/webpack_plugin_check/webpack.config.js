@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
-module.export = {
+module.exports = {
   entry: "./src/index.js",
   output: {
     filename: "bundle.js",
@@ -18,14 +18,14 @@ module.export = {
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
-        test: /\.(jpg|png)/i,
+        test: /\.(jpg|png)$/i,
         use: [
           {
             loader: "url-loader",
             options: {
               limit: 8192,
               name: "[name].[ext]",
-              outputPath: "image",
+              outputPath: "images",
             },
           },
         ],

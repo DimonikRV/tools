@@ -1,4 +1,4 @@
-import { getTaskList } from "./gateway.js";
+import { getTaskList } from "./gateway";
 import "./list.scss";
 
 const listElem = document.querySelector(".list");

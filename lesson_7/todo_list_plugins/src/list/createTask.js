@@ -1,11 +1,11 @@
-import { createTaskList } from './gateway.js';
-import { renderTasks } from './renderer.js';
+import { createTaskList } from "./gateway";
+import { renderTasks } from "./renderer";
 
 export const onCreateTask = () => {
-  const taskTitleInputElem = document.querySelector('.task-input');
+  const taskTitleInputElem = document.querySelector(".task-input");
   const text = taskTitleInputElem.value;
   if (!text) return;
-  taskTitleInputElem.value = '';
+  taskTitleInputElem.value = "";
 
   const newTasksList = {
     text,

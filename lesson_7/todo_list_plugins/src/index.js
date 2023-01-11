@@ -1,5 +1,5 @@
-import { initTodoListHandlers } from "./list/todoList.js";
-import { renderTasks } from "./list/renderer.js";
+import { initTodoListHandlers } from "./list/todoList";
+import { renderTasks } from "./list/renderer";
 import "./index.scss";
 
 document.addEventListener("DOMContentLoaded", () => {
