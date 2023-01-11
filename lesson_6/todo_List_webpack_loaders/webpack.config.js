@@ -15,14 +15,16 @@ module.exports = {
       },
       {
         test: /.(jpg|png)$/,
-        use: {
-          loader: "url-loader",
-          options: {
-            limit: 8192,
-            name: "[name].[ext]",
-            outputPath: "images",
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 8192,
+              name: "[name].[ext]",
+              outputPath: "images",
+            },
           },
-        },
+        ],
       },
     ],
   },
