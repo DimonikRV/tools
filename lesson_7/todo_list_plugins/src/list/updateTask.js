@@ -7,7 +7,7 @@ export const onToggleTask = (event) => {
 
   const taskId = event.target.dataset.id;
   const { text, createDate } = getTaskList().then((tasklist) =>
-    tasklist.find((task) => task.id === event.target.dataset.id)
+    tasklist.find((task) => task.id === taskId)
   );
   const done = event.target.checked;
   const updatedTask = {
@@ -16,7 +16,5 @@ export const onToggleTask = (event) => {
     done,
     finishDate: done ? new Date().toISOString() : null,
   };
-  updateTask(updatedTask, taskId)
-    .then(() => getTaskList())
-    .then(() => renderTasks());
+  updateTask(updatedTask, taskId).then(() => renderTasks());
 };
