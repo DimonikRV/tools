@@ -11,11 +11,7 @@ module.exports = (env, argv) => {
     module: {
       rules: [
         {
-          test: /\.js$/i,
-          use: ["babel-loader"],
-        },
-        {
-          test: /\.s?css$/i,
+          test: /.s?css$/,
           use: [
             isProduction ? MiniCssExtractPlugin.loader : "style-loader",
             "css-loader",
@@ -23,7 +19,7 @@ module.exports = (env, argv) => {
           ],
         },
         {
-          test: /\.(jpg|png|gif)$/i,
+          test: /.(jpg|png)$/,
           use: [
             {
               loader: "url-loader",
